@@ -159,7 +159,7 @@ body[data-mood="on"] .scene[data-mood="warm"]::after{background:var(--wash-warm)
   box-shadow:0 28px 60px -24px rgba(0,0,0,.85), 0 2px 0 rgba(244,239,228,.06) inset;
 }
 .panel-art{
-  position:absolute;inset:0;background-size:cover;background-position:center;
+  position:absolute;inset:0;background-size:cover;background-position:right;
   will-change:transform;transform:scale(1.06);
 }
 /* painted-placeholder backdrops (per beat, set inline via --p1/--p2) */
