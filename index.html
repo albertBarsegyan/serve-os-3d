@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>serve-os — one system, every station.</title>
+<meta name="description" content="serve-os runs the floor, the kitchen and the books. Smart ordering, kitchen sync, payments, analytics and staff management — finally speaking the same language." />
+
+<!-- favicons (green brand mark) -->
+  <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
+  <link rel="shortcut icon" href="/favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="serve-os" />
+  <link rel="manifest" href="/favicon/site.webmanifest" />
+
+<!-- open graph -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="serve-os — one system, every station." />
+<meta property="og:description" content="Every table tells a story. Most of them are about waiting. There's a faster way." />
+<meta property="og:image" content="assets/05-qr.webp" />
+<meta name="twitter:card" content="summary_large_image" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Hanken+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body data-layout="overlay" data-mood="on" data-parallax-on="on" data-arthint="on">
+
+  <!-- ===================== NAV ===================== -->
+  <header class="nav" id="nav">
+    <a class="brand" href="#top" aria-label="serve-os home">
+      <img src="assets/logo.png" alt="serve-os logo" />
+      <span class="wm">serve<b>-os</b></span>
+    </a>
+    <nav class="nav-links" aria-label="primary">
+      <a href="#beat-clock">The problem</a>
+      <a href="#beat-turn">The fix</a>
+      <a href="#beat-scan">How it works</a>
+      <a href="#beat-cta">Pricing</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="ghost" href="#beat-cta">Log in</a>
+      <a class="solid-btn" href="#beat-cta">Book a demo</a>
+    </div>
+  </header>
+
+  <div class="progress" id="progress"></div>
+
+  <!-- ===================== BEAT RAIL ===================== -->
+  <nav class="rail" aria-label="story beats">
+    <button data-i="0" data-label="Hero"></button>
+    <button data-i="1" data-label="The old way"></button>
+    <button data-i="2" data-label="Order"></button>
+    <button data-i="3" data-label="The clock"></button>
+    <button data-i="4" data-label="Anger"></button>
+    <button data-i="5" data-label="The turn"></button>
+    <button data-i="6" data-label="With serve-os"></button>
+    <button data-i="7" data-label="Scan"></button>
+    <button data-i="8" data-label="Kitchen fires"></button>
+    <button data-i="9" data-label="Satisfied"></button>
+    <button data-i="10" data-label="Get serve-os"></button>
+  </nav>
+
+  <main id="top">
+
+    <!-- ============ BEAT 1 · HERO ============ -->
+    <section class="scene hero" id="beat-hero" data-beat="0" data-screen-label="01 Hero">
+      <div class="scene-inner">
+        <div class="panel">
+          <div class="panel-art" data-parallax="0" style="--p1:#7c4c26;--p2:#231610;background-image:url('assets/restaurant.png');"></div>
+          <div class="panel-meta done">
+            <span class="file">assets/01-restaurant.webp</span>
+            <p class="desc">Wide establishing shot — big, beautiful restaurant interior: warm wood, brass fixtures, hanging lights, diners at tables. Slow Ken-Burns zoom.</p>
+          </div>
+        </div>
+        <div class="hero-copy">
+          <h1 class="hero-wm reveal">serve<span class="os">-os</span></h1>
+          <p class="hero-line reveal d1">Every table tells a story.<br/><em>Most of them are about waiting.</em></p>
+        </div>
+      </div>
+      <div class="scroll-cue">scroll<span class="arr">↓</span></div>
+    </section>
+
+    <!-- ============ BEAT 2 · ACT I LABEL ============ -->
+    <section class="scene act-label cool" id="beat-act1" data-beat="1" data-mood="cool" data-screen-label="02 Act I">
+      <div class="scene-inner">
+        <div class="act-numeral reveal">I</div>
+        <div class="act-rule reveal d1"></div>
+        <div class="act-name reveal d2">THE OLD WAY</div>
+      </div>
+    </section>
+
+    <!-- ============ BEAT 3 · ORDER ============ -->
+    <section class="scene art-beat" id="beat-order" data-beat="2" data-mood="cool" data-screen-label="03 Order">
+      <div class="scene-inner">
+        <div class="panel">
+          <div class="panel-art" data-parallax="0.14" style="--p1:#6c462b;--p2:#221a13;background-image:url('assets/02-order-old.webp');"></div>
+          <div class="panel-meta done">
+            <span class="file">assets/02-order-old.webp</span>
+            <p class="desc">Customer seated, raising a hand to flag a passing waiter. Menu on the table, hopeful.</p>
+          </div>
+        </div>
+        <div class="copy">
+          <div class="beat-tag reveal"><span class="num">02</span> · the old way</div>
+          <h2 class="headline reveal d1">You order.<br/>And then you wait.</h2>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ BEAT 4 · THE CLOCK ============ -->
+    <section class="clock-scene" id="beat-clock" data-beat="3" data-screen-label="04 The clock">
+      <div class="clock-stage">
+        <div class="clock-panel panel">
+          <div class="panel-art" data-parallax="0" style="background-image:url('assets/03-waiting.webp');"></div>
+          <div class="panel-meta done">
+            <span class="file">assets/03-waiting.webp</span>
+            <p class="desc">Customer alone, arms crossed, empty place setting. A large clock on the wall behind them — clear wall space (the overlay clock sits here).</p>
+          </div>
+        </div>
+        <div class="clock-tint" id="clockTint"></div>
+
+        <div class="clock-overline">
+          <span class="beat-tag"><span class="num">04</span> · scroll to wait</span>
+        </div>
+
+        <div class="clock-wrap">
+          <svg class="analog" viewBox="0 0 200 200" aria-hidden="true">
+            <circle class="face" cx="100" cy="100" r="92"/>
+            <circle class="ring" cx="100" cy="100" r="80"/>
+            <g class="tick">
+              <line x1="100" y1="14" x2="100" y2="28"/><line x1="186" y1="100" x2="172" y2="100"/>
+              <line x1="100" y1="186" x2="100" y2="172"/><line x1="14" y1="100" x2="28" y2="100"/>
+            </g>
+            <g class="tick-min">
+              <line x1="143" y1="24" x2="138" y2="33"/><line x1="176" y1="57" x2="167" y2="62"/>
+              <line x1="176" y1="143" x2="167" y2="138"/><line x1="143" y1="176" x2="138" y2="167"/>
+              <line x1="57" y1="176" x2="62" y2="167"/><line x1="24" y1="143" x2="33" y2="138"/>
+              <line x1="24" y1="57" x2="33" y2="62"/><line x1="57" y1="24" x2="62" y2="33"/>
+            </g>
+            <line class="hand-h" id="handH" x1="100" y1="100" x2="100" y2="60"/>
+            <line class="hand-m" id="handM" x1="100" y1="100" x2="100" y2="34"/>
+            <circle class="pin" cx="100" cy="100" r="6.5"/>
+          </svg>
+          <div class="dig-label">minutes waited</div>
+          <div class="digital" id="digital">00:00</div>
+          <div class="clock-copy">
+            <span id="c5">Five minutes.</span>
+            <span id="c15">Fifteen.</span>
+            <span id="c30">Thirty.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ BEAT 5 · ANGER ============ -->
+    <section class="scene art-beat alt" id="beat-anger" data-beat="4" data-mood="cold" data-screen-label="05 Anger">
+      <div class="scene-inner">
+        <div class="panel">
+          <div class="panel-art" data-parallax="0.16" style="--p1:#3b4b57;--p2:#161d24;background-image:url('assets/04-leaving.webp');"></div>
+          <div class="panel-meta done">
+            <span class="file">assets/04-angry.webp</span>
+            <p class="desc">Close-ish on the customer: frustrated, angry. Comic steam-puff shapes near the head, cool desaturated mood.</p>
+          </div>
+        </div>
+        <div class="copy">
+          <div class="beat-tag reveal"><span class="num">05</span> · the breaking point</div>
+          <h2 class="headline reveal d1">Hungry.<br/>Ignored.<br/>Done.</h2>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ BEAT 6 · THE TURN ============ -->
+    <section class="scene turn" id="beat-turn" data-beat="5" data-screen-label="06 The turn">
+      <div class="scene-inner">
+        <div class="beat-tag reveal"><span class="num">06</span> · the turn</div>
+        <h2 class="turn-wm reveal d1">serve<span class="os">-os</span></h2>
+        <p class="turn-line reveal d2">There's a faster way.</p>
+        <p class="turn-note reveal d3">chaos → calm</p>
+      </div>
+    </section>
+
+    <!-- ============ BEAT 7 · ACT II LABEL ============ -->
+    <section class="scene act-label warm" id="beat-act2" data-beat="6" data-mood="warm" data-screen-label="07 Act II">
+      <div class="scene-inner">
+        <div class="act-numeral reveal">II</div>
+        <div class="act-rule reveal d1"></div>
+        <div class="act-name reveal d2">WITH serve<span class="os">-os</span></div>
+      </div>
+    </section>
+
+    <!-- ============ BEAT 8 · SCAN ============ -->
+    <section class="scene art-beat" id="beat-scan" data-beat="7" data-mood="warm" data-screen-label="08 Scan">
+      <div class="scene-inner">
+        <div class="panel">
+          <div class="panel-art" data-parallax="0.14" style="--p1:#c1742e;--p2:#2a1c10;background-image:url('assets/05-qr.webp');"></div>
+          <div class="panel-meta done">
+            <span class="file">assets/05-qr.webp</span>
+            <p class="desc">Bright + optimistic — glowing QR on the tabletop, a hand holding a phone scanning it, a colorful holographic menu blooming above. Scan-beam sweeps.</p>
+          </div>
+        </div>
+        <div class="copy">
+          <div class="beat-tag reveal"><span class="num">08</span> · with serve-os</div>
+          <h2 class="headline reveal d1">Scan. Browse.<br/>Order — right from the table.</h2>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ BEAT 9 · KITCHEN FIRES ============ -->
+    <section class="scene art-beat alt" id="beat-fast" data-beat="8" data-mood="warm" data-screen-label="09 Kitchen fires">
+      <div class="scene-inner">
+        <div class="panel">
+          <div class="panel-art" data-parallax="0.2" style="--p1:#8c4c20;--p2:#271710;background-image:url('assets/06-fast.webp');"></div>
+          <div class="panel-meta done">
+            <span class="file">assets/06-fast.webp</span>
+            <p class="desc">A waiter swiftly setting down a steaming, delicious plate. Comic speed / motion lines, the customer lighting up. Quick parallax push.</p>
+          </div>
+        </div>
+        <div class="copy">
+          <div class="beat-tag reveal"><span class="num">09</span> · the kitchen fires</div>
+          <h2 class="headline reveal d1">Tickets fire straight<br/>to the kitchen. Food moves.</h2>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ BEAT 10 · SATISFIED ============ -->
+    <section class="scene art-beat" id="beat-happy" data-beat="9" data-mood="warm" data-screen-label="10 Satisfied">
+      <div class="scene-inner">
+        <div class="panel">
+          <div class="panel-art" data-parallax="0.12" style="--p1:#ba8420;--p2:#2c1d0d;background-image:url('assets/07-happy.webp');"></div>
+          <div class="panel-meta done">
+            <span class="file">assets/07-happy.webp</span>
+            <p class="desc">Customer happily eating. Warm glow + sparkle accents around the dish, fully satisfied.</p>
+          </div>
+        </div>
+        <div class="copy">
+          <div class="beat-tag reveal"><span class="num">10</span> · satisfied</div>
+          <h2 class="headline reveal d1">Fed, happy, and out<br/>the door smiling.</h2>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ BEAT 11 · CTA CLOSE ============ -->
+    <section class="scene cta" id="beat-cta" data-beat="10" data-screen-label="11 CTA">
+      <div class="scene-inner">
+        <div class="beat-tag reveal"><span class="num">11</span> · one system, every station</div>
+        <h2 class="cta-wm reveal d1">serve<span class="os">-os</span> — one system, every station.</h2>
+        <p class="sub reveal d2">Smart ordering, kitchen sync, payments, analytics and staff management — finally speaking the same language.</p>
+        <div class="btns reveal d3">
+          <a class="btn primary" href="#">Book a demo →</a>
+          <a class="btn secondary" href="#">See it live</a>
+        </div>
+        <div class="foot">
+          <span class="fbrand"><img src="assets/logo.png" alt="" /> serve-os · one system, every station.</span>
+          <span>© 2026 serve-os, inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <div id="tweaks-root"></div>
+
+  <!-- ===================== scroll mechanics ===================== -->
+  <script src="scroll.js"></script>
+
+  <!-- ===================== tweaks panel ===================== -->
+  <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+  <script type="text/babel" src="tweaks-panel.jsx"></script>
+  <script type="text/babel">
+    const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
+      "layout": "overlay",
+      "mood": true,
+      "parallax": true,
+      "arthint": true,
+      "accent": "#e8702a"
+    }/*EDITMODE-END*/;
+
+    function App(){
+      const [t, setTweak] = useTweaks(TWEAK_DEFAULTS);
+      React.useEffect(()=>{
+        const b = document.body;
+        b.dataset.layout = t.layout;
+        b.dataset.mood = t.mood ? "on" : "off";
+        b.dataset.parallaxOn = t.parallax ? "on" : "off";
+        b.dataset.arthint = t.arthint ? "on" : "off";
+        const accent = Array.isArray(t.accent) ? t.accent[0] : t.accent;
+        document.documentElement.style.setProperty("--accent", accent);
+        if(window.__serveosRelayout) requestAnimationFrame(window.__serveosRelayout);
+      }, [t.layout, t.mood, t.parallax, t.arthint, t.accent]);
+
+      return (
+        <TweaksPanel>
+          <TweakSection label="Scene layout" />
+          <TweakRadio label="Art vs copy" value={t.layout}
+            options={["overlay","split","stacked"]}
+            onChange={(v)=>setTweak("layout", v)} />
+          <TweakSection label="Motion & mood" />
+          <TweakToggle label="Mood washes" value={t.mood} onChange={(v)=>setTweak("mood", v)} />
+          <TweakToggle label="Parallax depth" value={t.parallax} onChange={(v)=>setTweak("parallax", v)} />
+          <TweakSection label="Story accent" />
+          <TweakColor label="Amber" value={t.accent}
+            options={["#e8702a","#d2541b","#f0922f","#d93a28"]}
+            onChange={(v)=>setTweak("accent", v)} />
+          <TweakToggle label="Show art-slot labels" value={t.arthint} onChange={(v)=>setTweak("arthint", v)} />
+        </TweaksPanel>
+      );
+    }
+    ReactDOM.createRoot(document.getElementById("tweaks-root")).render(<App/>);
+  </script>
+</body>
+</html>
