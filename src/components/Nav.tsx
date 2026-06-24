@@ -14,8 +14,8 @@ export default function Nav() {
         <a href="#beat-cta">Pricing</a>
       </nav>
       <div className="nav-cta">
-        <a className="ghost" href="#beat-cta">Log in</a>
-        <a className="solid-btn" href="#beat-cta">Book a demo</a>
+        <a className="ghost" href="https://serve-os.net/auth/sign-in">Log in</a>
+        <a className="solid-btn" href="https://calendly.com/albertbarsegyan6/serve-os-demo">Book a demo</a>
       </div>
     </header>
   )
