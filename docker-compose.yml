@@ -1,0 +1,14 @@
+services:
+  story:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: serve_os_story_prod
+    restart: unless-stopped
+    networks:
+      - shared
+
+networks:
+  shared:
+    external: true
+    name: shared
